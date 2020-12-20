@@ -500,13 +500,17 @@ body{
     margin: 10px 0;
     margin-bottom: 30px;
 }
+.icon__exit{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
 .icon-exit::before {
     font-family: 'FontAwesome';
     content: '\f00d';
     font-size: 25px;
     font-weight: 300;
-    padding: 10px 0 0 470px;
-
 }
 .receipt__window>span{
     cursor: pointer;
@@ -673,7 +677,7 @@ body{
 }
 
 @media(max-width:768px) {
-    
+  
     .nav__list-link{
         color: black;
         text-align: start;
@@ -743,6 +747,11 @@ body{
 }
 
 @media (max-width:620px) {
+    .receipt.active .receipt__window {
+        width: 50%;
+
+    }
+  
     .header__info-title{
         margin-bottom: 10px;
         
@@ -805,6 +814,10 @@ body{
 }
 
 @media (max-width:550px){
+    .receipt.active .receipt__window {
+        width: 55%;
+
+    }
     .about::after,.about::before{
         border: none
     }
@@ -866,6 +879,10 @@ body{
 }
 
 @media (max-width:420px){
+    .receipt.active .receipt__window {
+        width: 55%;
+
+    }
     .footer__pay-item>img{
         height: 40px;
         width: 40px;
