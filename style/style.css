@@ -805,6 +805,9 @@ body{
 }
 
 @media (max-width:550px){
+    .about::after,.about::before{
+        border: none
+    }
     .header__info{
         max-width: 700px;
         margin-top: -70px;
